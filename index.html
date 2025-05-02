@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/font/yekan.css" rel="stylesheet" />
+    <style>
+      body {
+        font: 12pt/2 Yekan, sans-serif;
+        direction: rtl;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      p {
+        font-size: 12px;
+        line-height: 16px;
+        /* color: #334155; */
+      }
+      :root {
+        --color-primary: #334155;
+        --color-secondary: #686f82;
+        --color-main-green:#108B62;
+        --text-lg-size: 16px;
+        --text-md-size: 14px;
+        --text-sm-size: 12px;
+        --text-xs-size: 10px;
+        --text-xxs-size: 8px;
+        --font-weight-regular: 400;
+        --font-weight-medium: 500;
+        --font-weight-bold: 700;
+        --font-weight-bolder: 900;
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body dir="rtl" class="bg-slate-100">
+    <header
+      class="flex min-w-[375px] sm:h-[67px] md:h-[81px] bg-white flex-row items-center px-[26px] py-[23px] max-sm:p-[16px]"
+    >
+      <!-- icon container -->
+      <div class="">
+        <img
+          src="assets/icons/logo.png"
+          alt="logo"
+          class="max-sm:w-[151px] max-sm:h-[32px] w-[167px] h-[35px]"
+        />
+      </div>
+      <!-- menu -->
+      <div class="flex mr-[70px] max-sm:hidden">
+        <ul class="flex flex-row">
+          <li
+            class="text-white flex flex-row justify-center items-center gap-2"
+          >
+            <img
+              src="assets/icons/header-menu-home.png"
+              alt="menu"
+              class="h-[25px] w-[25px]"
+            />
+            <p class="text-[var(--color-primary)]">خانه</p>
+          </li>
+          <li
+            class="text-white flex flex-row justify-center items-center gap-2 mr-[19px]"
+          >
+            <img
+              src="assets/icons/header-menu-anjomanAcademyTekanesh.png"
+              alt="menu"
+              class="h-[25px] w-[25px]"
+            />
+            <p class="text-[var(--color-primary)]">
+              انجمــــــن آکادمـــــی تکانش
+            </p>
+          </li>
+          <li
+            class="text-white flex flex-row justify-center items-center gap-2 mr-[19px]"
+          >
+            <img
+              src="assets/icons/header-menu-groupListening.png"
+              alt="menu"
+              class="h-[25px] w-[25px]"
+            />
+            <p class="text-[var(--color-primary)]">
+              انجمــــــن گروپلنسینـــــــگ
+            </p>
+          </li>
+        </ul>
+      </div>
+      <!-- user avatar profile -->
+      <div
+        class="flex flex-row items-center gap-[21px] max-sm:gap-[5px] mr-auto"
+      >
+        <img
+          src="assets/icons/userProfile.png"
+          alt="user"
+          class="h-[40px] w-[40px]"
+        />
+        <div>
+          <p class="font-semibold text-[var(--color-primary)]">
+            تیــــدا گودرزی
+          </p>
+          <p class="text-[var(--color-secondary)] font-normal">دانشجوی آپورک</p>
+        </div>
+        <img
+          src="assets/icons/header-menu-divider-vertical.png"
+          alt="arrow"
+          class=""
+        />
+        <div
+          class="flex flex-row items-center justify-between rounded-[47px] border-[var(--color-secondary)] border p-[4px] h-[36px] w-[155px] max-sm:w-auto"
+        >
+          <p class="text-[var(--color-primary)] max-sm:hidden">
+            دریافت اطلاعات از تکانش
+          </p>
+          <img
+            src="assets/icons/subscribe.png"
+            alt="download"
+            class="h-[26px] w-[26px]"
+          />
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <main class="mt-[10px] mx-[27px] flex flex-row gap-[12px] max-sm:gap-0 max-sm:mx-0">
+      <aside class="max-sm:hidden h-[700px] w-[200px]">
+        <!-- searchbar -->
+        <div
+          class="flex flex-row items-center justify-between bg-white text-[var(--color-primary)] rounded-[35px] mx-[5px] mt-[10px] px-[10px] relative"
+        >
+          <input placeholder="جستجو کنید" class="" />
+          <img
+            src="./assets/icons/sidebar-search.png"
+            class="w-[27px] h-[27px] absolute left-0"
+          />
+        </div>
+        <!-- searchbar -->
+        <!-- category -->
+        <section class="bg-white w-[200px] rounded-[14px] mt-[20px] p-[10px]">
+          <p
+            class="text-[var(--color-primary)] font-[var(--font-weight-bolder)] text-[16px] mb-[10px] px-2"
+          >
+            دسته بنـــــــــدی ها
+          </p>
+          <div class="flex flex-row items-center p-[6px]">
+            <img
+              src="assets/icons/sidebar-mytopics.png"
+              alt="mytopics"
+              class="w-[28px] h-[28px]"
+            />
+            <p class="mr-[4px]">تاپیک ‌های من</p>
+          </div>
+          <div class="flex flex-row items-center p-[6px]">
+            <img
+              src="assets/icons/sidebar-soalat-motedavel.png"
+              alt="mytopics"
+              class="w-[28px] h-[28px]"
+            />
+            <p class="mr-[4px]">سوالات متــــــــداول</p>
+          </div>
+
+          <div class="flex flex-row items-center p-[6px]">
+            <img
+              src="assets/icons/sidebar-akhbare-tekanesh.png"
+              alt="mytopics"
+              class="w-[28px] h-[28px]"
+            />
+            <p class="mr-[4px]">اخبار تکانش</p>
+          </div>
+        </section>
+        <!-- category -->
+
+        <!-- shortcuts -->
+        <section class="bg-white w-[200px] rounded-[14px] mt-[20px] p-[10px]">
+          <!-- first time -->
+          <div
+            class="flex flex-row items-center p-[6px] w-[176px] overflow-hidden"
+          >
+            <img
+              src="assets/icons/sidebar-akharin-mataleb.png"
+              alt="mytopics"
+              class="w-[28px] h-[28px]"
+            />
+            <div class="">
+              <p
+                class="mr-[4px] font-[var(--font-weight-bold)] text-[var(--text-sm-size)]"
+              >
+                تاپیک ‌های من
+              </p>
+              <p
+                class="mr-[4px] truncate text-[var(--color-secondary)] font-[var(--font-weight-regular)] text-[var(--text-xs-size)"
+              >
+                جدیدترین و به روزترین مقالات ...
+              </p>
+            </div>
+          </div>
+          <!-- first time -->
+          <!-- second -->
+          <div class="flex flex-row items-center p-[6px]">
+            <img
+              src="assets/icons/sidebar-mohemtarin-mataleb.png"
+              alt="mytopics"
+              class="w-[28px] h-[28px]"
+            />
+            <div class="">
+              <p
+                class="mr-[4px] font-[var(--font-weight-bold)] text-[var(--text-sm-size)]"
+              >
+                مهــــــــم ترین مطالب
+              </p>
+              <p
+                class="mr-[4px] truncate text-[var(--color-secondary)] text-[var(--color-secondary)] font-[var(--font-weight-regular)] text-[var(--text-xs-size)"
+              >
+                جدیدترین و به روزترین مقالات
+              </p>
+            </div>
+          </div>
+          <!-- second -->
+          <!-- third -->
+          <div class="flex flex-row items-center p-[6px]">
+            <img
+              src="assets/icons/sidebar-nevisandegan-mataleb.png"
+              alt="mytopics"
+              class="w-[28px] h-[28px]"
+            />
+            <div class="">
+              <p class="mr-[4px]">نویسنــــــــدگان مطالب</p>
+              <p
+                class="mr-[4px] truncate text-[var(--color-secondary)] text-[var(--color-secondary)] font-[var(--font-weight-regular)] text-[var(--text-xs-size)"
+              >
+                جدیدترین و به روزترین مقالات ...
+              </p>
+            </div>
+          </div>
+          <!-- third -->
+        </section>
+        <!-- shortcuts -->
+        <!-- newest articles -->
+        <section class="bg-white w-[200px] rounded-[14px] mt-[20px] p-[10px]">
+          <p
+            class="text-[var(--color-primary)] font-[var(--font-weight-bolder)] text-[16px] mb-[10px] px-2"
+          >
+            جدیدتریـــــــــن موضوعــات
+          </p>
+          <div class="flex flex-row items-center p-[6px]">
+            <img
+              src="assets/icons/sidebar-mytopics.png"
+              alt="mytopics"
+              class="w-[28px] h-[28px]"
+            />
+            <p class="mr-[4px]">قیمت دلار</p>
+          </div>
+          <div class="flex flex-row items-center p-[6px]">
+            <img
+              src="assets/icons/sidebar-soalat-motedavel.png"
+              alt="mytopics"
+              class="w-[28px] h-[28px]"
+            />
+            <div class="">
+              <p class="mr-[4px]">دوره های رایگـــــان</p>
+              <div
+                class="flex flex-row items-center text-[var(--color-secondary)] font-[var(--font-weight-regular)] text-[var(--text-xs-size)]"
+              >
+                <img
+                  src="assets/icons/sidebar-author-small.png"
+                  alt="author"
+                  class="w-[10px] h-[10px]"
+                />
+                <p>تیدا گودرزی</p>
+
+                <img
+                  src="assets/icons/sidebar-author-time-small.png"
+                  alt="author-time"
+                  class="w-[10px] h-[10px]"
+                />
+                <p>۲۹ اسفندماه ۱۴۰۳</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- newest articles -->
+      </aside>
+      <article>
+        <!-- small device shortcuts -->
+         <section>
+            <div class="flex flex-row items-center justify-between self-align text-[var(--color-primary)] sm:hidden mx-[60px] my-[16px] gap-[16px]">
+                <!-- first -->
+                    <div class="flex flex-col items-center">
+                        <img src="assets/icons/sidebar-mytopics.png" alt="mytopics" class="w-[28px] h-[28px] block" />
+                        <p class="block">
+                            تاپیک ‌های من
+                        </p>
+                    </div>
+                <!-- first -->
+                 <!-- second -->
+                 <div class="flex flex-col items-center">
+                    <img src="assets/icons/sidebar-soalat-motedavel.png" alt="mytopics" class="w-[28px] h-[28px]" />
+                    <p class="">
+                        سوالات متــــــــداول
+                    </p>
+                </div>
+                <!-- second -->
+                 <!-- third -->
+                 <div class="flex flex-col items-center">
+                    <img src="assets/icons/sidebar-akhbare-tekanesh.png" alt="mytopics" class="w-[28px] h-[28px]" />
+                    <p class="">
+                        اخبار تکانش
+                    </p>
+                </div>
+<!-- third -->
+            </div>
+         </section>
+        <!-- small device shortcuts -->
+
+        <!-- create topic -->
+        <section
+          class="bg-white h-[86px] w-[1013px] max-sm:w-[375px] max-sm:h-[56px] rounded-[14px] max-sm:mt-0 mt-[10px] flex items-center justify-between"
+        >
+          <div
+            class="flex flex-row items-center justify-between max-sm:my-[10px] max-sm:mx-[16px] my-[13px] mx-[20px] gap-[7px] max-sm:gap-[5px]"
+          >
+            <img
+              src="assets/icons/main-header-Avatar.png"
+              alt="mytopics"
+              class="w-[60px] h-[60px] max-sm:h-[32px] max-sm:w-[32px] block"
+            />
+            <input type="text" placeholder="لورم ایپسوم را به اشتراک بگذاریم ..." class="w-[761px] max-sm:w-[230px] h-[32px] border-[var(--color-secondary)] border rounded-[8px] px-4" />
+            <button class="mr-[4px] bg-[var(--color-main-green)] rounded-[8px] text-center w-[140px] max-sm:w-[73px]  text-white h-[32px] text-[var(--text-sm-size)]">ایجاد تاپیک</button>
+          </div>
+        </section>
+        <!-- create topic -->
+
+        <!-- topics mobile -->
+        <section class="bg-white sm:hidden mt-[2px] rounded-[16px] p-[10px]">
+            <div class="flex flex-row">
+                <img src="assets/icons/main-topics-post-image-small.png" alt="post-picture" class="w-[55px] h-[55px] max-sm:w-[55px] max-sm:h-[55px] block" />
+                <div>
+                    <p>گروپ لنسینگ چیست؟ مزایا و معایب گروپ لنسینگ</p>
+                    <span class="bg-[#EDF0EF] px-[10px]  py-[4px] rounded-[20px] h-[24px]">آموزش</span>
+                    <span class="bg-[#EDF0EF] px-[10px]  py-[4px] rounded-[20px] h-[24px]">دلار</span>
+                    <span class="bg-[#EDF0EF] px-[10px]  py-[4px] rounded-[20px] h-[24px]">درآمـــد دلاری</span>
+                </div>
+            </div>
+            <div class="flex flex-row">
+                
+                <img src="./assets/icons/main-posts-author-Avatars.png" alt="author" class="w-[32px] h-[32px]" />
+                <div>
+                    <p>تیــــــــــدا گودرزی</p>
+                    <p>۳ هفته پیش</p>
+                </div>
+                <div class="mr-auto flex gap-[14px] items-center">
+                    <p>۶۵۱٬۳۲۴ بازدیـد</p>
+                    <p>۳۶۶۵۴۵ </p>
+                    <p>۵۶ نظــر</p>
+                </div>
+            </div>
+        </section>
+        <!-- topics mobile-->
+
+      </article>
+    </main>
+  </body>
+</html>
